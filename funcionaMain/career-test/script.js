@@ -78,7 +78,7 @@ form.addEventListener('submit', (event) => {
     
     console.log(data)
 
-    fetch("https://6651-190-17-61-41.sa.ngrok.io/career-path", {
+    fetch("https://60ab-190-17-61-41.sa.ngrok.io/career-path", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },

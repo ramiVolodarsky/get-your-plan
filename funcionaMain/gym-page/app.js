@@ -28,7 +28,7 @@ form.addEventListener("submit", (event) => {
         "limitation": limitation
     };
 
-    fetch("https://7af1-190-17-61-41.sa.ngrok.io/gym-plan", {
+    fetch("https://60ab-190-17-61-41.sa.ngrok.io/gym-plan", {
         method: "POST",
         body: JSON.stringify(data),
         headers: { "Content-Type": "application/json" },

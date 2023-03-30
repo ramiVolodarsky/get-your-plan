@@ -67,7 +67,7 @@ Finally, I have a budget of $${budget} per week for food and supplements, so I w
 
 Could you provide me with a comprehensive nutritional plan that is tailored to my specific needs? Thank you in advance for your help!`;
 
-  fetch("https://3046-190-17-61-41.sa.ngrok.io/nutrition-plan", {
+  fetch("https://60ab-190-17-61-41.sa.ngrok.io/nutrition-plan", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" },
