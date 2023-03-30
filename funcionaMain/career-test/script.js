@@ -87,8 +87,7 @@ form.addEventListener('submit', (event) => {
         .then((data) => {
             loadingOverlay.classList.remove("show");
             const convertedResponse = data.replace(/\n+/g, "\n");
-            responseContainer.innerHTML += `<p><strong>You:</strong> ${message}</p>
-              <p><strong>Bot:</strong> ${convertedResponse}</p>`;
+            responseContainer.innerHTML += `<p><strong>Bot:</strong> ${convertedResponse}</p>`;
         })
         .catch((error) => {
             loadingOverlay.classList.remove("show");

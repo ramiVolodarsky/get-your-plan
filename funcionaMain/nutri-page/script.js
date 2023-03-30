@@ -76,8 +76,7 @@ Could you provide me with a comprehensive nutritional plan that is tailored to m
     .then((data) => {
       loadingOverlay.classList.remove("show");
       console.log(data)
-      responseContainer.innerHTML += `<p><strong>You:</strong> ${message}</p>
-  <p><strong>Bot:</strong> ${data}</p>`;
+      responseContainer.innerHTML += `<p><strong>Bot:</strong> ${data}</p>`;
     })
     .catch((error) => {
       loadingOverlay.classList.remove("show");
