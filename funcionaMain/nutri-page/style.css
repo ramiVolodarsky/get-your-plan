@@ -1,0 +1,93 @@
+body {
+    background: url('https://images.squarespace-cdn.com/content/v1/55bc0f3be4b07e0f753f5bd1/1538329057862-XY4XV0OBVDC9JM172A3Z/chalk+board+cover.jpg?format=1500w') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.form-group label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-control::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.btn-primary {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+    border-radius: 0;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.col-md-6:nth-child(odd) {
+    padding-right: 15px;
+}
+
+.col-md-6:nth-child(even) {
+    padding-left: 15px;
+}
+
+#response-container {
+    white-space: pre-wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #f9f9f9;
+}
+
+#response-container p {
+    margin: 0;
+    padding: 0;
+}
+
+#loading-overlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading-overlay.show {
+    display: block;
+}
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #000000;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

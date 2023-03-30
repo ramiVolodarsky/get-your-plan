@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Career Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5 mb-5">
+                <h1>Career Test</h1>
+            </div>
+        </div>
+        <form id="chat-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age">
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" class="form-control" id="gender" name="gender">
+            </div>
+
+            <div class="form-group">
+                <label for="interests">Interests:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="reading" name="interests[]" value="reading">
+                    <label class="form-check-label" for="reading">
+                        Reading and writing fiction
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="psychology" name="interests[]"
+                        value="psychology">
+                    <label class="form-check-label" for="psychology">
+                        Psychology and understanding why people behave the way they do
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="music" name="interests[]" value="music">
+                    <label class="form-check-label" for="music">
+                        Music and going to concerts
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="positive_impact" name="interests[]"
+                        value="positive_impact">
+                    <label class="form-check-label" for="positive_impact">
+                        Making a positive impact on society and helping others
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education level and academic background:</label>
+                <textarea class="form-control" id="education" name="education"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="work_experience">Work experience:</label>
+                <textarea class="form-control" id="work_experience" name="work_experience"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred_environment">Preferred work environment:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="office" name="preferred_environment"
+                        value="office">
+                    <label class="form-check-label" for="office">
+                        Office
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="remote" name="preferred_environment"
+                        value="remote">
+                    <label class="form-check-label" for="remote">
+                        Remote
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Geographic location:</label>
+                <textarea class="form-control" id="location" name="location"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="financial_goals">Financial goals:</label>
+                <textarea class="form-control" id="financial_goals" name="financial_goals"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="career_goals">Long-term career goals:</label>
+                <textarea class="form-control" id="career_goals" name="career_goals"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skills_strengths">Skills and strengths:</label><br>
+                <textarea class="form-control" id="skills_strengths" name="skills_strengths"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred_industries">Preferred industries or job functions:</label>
+                <textarea class="form-control" id="preferred_industries" name="preferred_industries"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="timeframe">Timeframe:</label>
+                <textarea class="form-control" id="timeframe" name="timeframe"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education_training">Availability for further education or training:</label>
+                <select class="form-control" id="education_training">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Educational background:</label>
+                <select class="form-control" id="education" name="education">
+                    <option value="high-school">High school</option>
+                    <option value="college">College</option>
+                    <option value="graduate-school">Graduate school</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Field of study or major:</label>
+                <input type="text" class="form-control" id="major" name="major">
+            </div>
+
+            <div class="form-group">
+                <label for="interests_hobbies">Interests and hobbies:</label>
+                <textarea class="form-control" id="interests_hobbies" name="interests"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="work-environment">Preferred work environment:</label>
+                <select class="form-control" id="work-environment" name="work-environment">
+                    <option value="office">Office</option>
+                    <option value="outdoors">Outdoors</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="job-responsibilities">Preferred job responsibilities:</label>
+                <textarea class="form-control" id="job-responsibilities" name="job-responsibilities"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="language-skills">Language skills:</label>
+                <textarea class="form-control" id="language-skills" name="language-skills"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="personality-traits">Personality traits:</label>
+                <textarea class="form-control" id="personality-traits" name="personality-traits"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="desired-salary">Desired salary or income range:</label>
+                <input class="form-control" type="text" id="desired-salary" name="desired-salary">
+            </div>
+
+            <div class="form-group">
+                <label for="preferred-industry">Preferred industry or sector:</label>
+                <input class="form-control" type="text" id="preferred-industry" name="preferred-industry"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="challenges">Any challenges or barriers that may affect the user's career
+                    choices:</label>
+                <textarea class="form-control" id="challenges" name="challenges"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="employment-status">Current employment status:</label>
+                <select class="form-control" id="employment-status" name="employment-status">
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="education-availability">Availability for further education or training:</label>
+                <select class="form-control" id="education-availability" name="education-availability">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="education-commitment">Level of commitment to further education or training:</label>
+                <select class="form-control" id="education-commitment" name="education-commitment">
+                    <option value="part-time">Part-time</option>
+                    <option value="full-time">Full-time</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="challenges">Any challenges or barriers that may affect the user's career
+                    choices:</label>
+                <textarea class="form-control" id="challenges" name="challenges"></textarea>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-12 text-center">
+                    <button id="submitBtn" type="submit" class="btn btn-primary btn-lg">Get My Workout Plan</button>
+                </div>
+                <div id="loading-overlay">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </form>
+        <div id="response-container"></div>
+        <script src="script.js"></script>
+</body>
+
+</html>

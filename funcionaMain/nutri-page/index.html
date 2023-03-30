@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutritional Plan Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Nutritional Plan Form</h1>
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (in pounds)</label>
+                <input type="number" class="form-control" id="weight" placeholder="Enter your weight">
+            </div>
+            <div class="form-group">
+                <label for="height">Height (in feet)</label>
+                <input type="number" class="form-control" id="height" placeholder="Enter your height">
+            </div>
+            <div class="form-group">
+                <label for="job">Job</label>
+                <input type="text" class="form-control" id="job" placeholder="Enter your job">
+            </div>
+            <div class="form-group">
+                <label for="exercise">Exercise</label>
+                <input type="text" class="form-control" id="exercise" placeholder="Enter your exercise routine">
+            </div>
+            <div class="form-group">
+                <label for="eating-habits">Eating Habits</label>
+                <input type="text" class="form-control" id="eating-habits" placeholder="Enter your eating habits">
+            </div>
+            <div class="form-group">
+                <label for="allergies">Allergies</label>
+                <input type="text" class="form-control" id="allergies" placeholder="Enter any allergies">
+            </div>
+            <div class="form-group">
+                <label for="health-goals">Health Goals</label>
+                <input type="text" class="form-control" id="health-goals" placeholder="Enter your health goals">
+            </div>
+            <div class="form-group">
+                <label for="dietary-concerns">Dietary Concerns</label>
+                <input type="text" class="form-control" id="dietary-concerns" placeholder="Enter any dietary concerns">
+            </div>
+            <div class="form-group">
+                <label for="cravings">Cravings</label>
+                <input type="text" class="form-control" id="cravings" placeholder="Enter any food cravings">
+            </div>
+            <div class="form-group">
+                <label for="dietary-preferences">Dietary Preferences</label>
+                <input type="text" class="form-control" id="dietary-preferences"
+                    placeholder="Enter any dietary preferences">
+            </div>
+            <div class="form-group">
+                <label for="schedule">Schedule</label>
+                <input type="text" class="form-control" id="schedule" placeholder="Enter your daily schedule">
+            </div>
+            <div class="form-group">
+                <label for="time-availability">Time Availability</label>
+                <input type="text" class="form-control" id="time-availability" placeholder="Enter your available time">
+            </div>
+            <div class="form-group">
+                <label for="meal-preferences">Meal Preferences</label>
+                <input type="text" class="form-control" id="meal-preferences" placeholder="Enter any meal preferences">
+            </div>
+            <div class="form-group">
+                <label for="family-history">Family History</label>
+                <input type="text" class="form-control" id="family-history" placeholder="Enter your family history">
+            </div>
+            <div class="form-group">
+                <label for="budget">Budget (per week)</label>
+                <input type="number" class="form-control" id="budget" placeholder="Enter your weekly budget"
+                    name="budget" required>
+            </div>
+            <div class="form-group">
+                <label for="medication">Current Medication:</label>
+                <input type="text" class="form-control" id="medication" placeholder="Enter your current medication"
+                    name="medication" required>
+            </div>
+            <div class="form-group">
+                <label for="sleep_apnea">Sleep Apnea:</label>
+                <input type="text" class="form-control" id="sleep_apnea"
+                    placeholder="Enter whether you have sleep apnea or not" name="sleep_apnea" required>
+            </div>
+            <div class="form-group">
+                <label for="submit"></label>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <div id="loading-overlay">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </form>
+        <div id="response-container"></div>
+    </div>
+    <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
