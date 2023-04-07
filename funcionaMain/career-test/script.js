@@ -74,25 +74,35 @@ form.addEventListener('submit', (event) => {
         "educationCommitment": educationCommitment,
         "interests": interests,
         "preferredEnvironment": preferredEnvironment
-    };    
-    
+    };
+
     console.log(data)
 
-    fetch("https://60ab-190-17-61-41.sa.ngrok.io/career-path", {
-        method: "POST",
+    fetch('https://5d1a-190-17-61-41.sa.ngrok.io/career-path', {
+        method: 'POST',
         body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" },
+        headers: { 'Content-Type': 'application/json' },
     })
-        .then((response) => response.text())
-        .then((data) => {
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.blob();
+        })
+        .then((blob) => {
             loadingOverlay.classList.remove("show");
-            const convertedResponse = data.replace(/\n+/g, "\n");
-            responseContainer.innerHTML += `<p><strong>Bot:</strong> ${convertedResponse}</p>`;
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'output.pdf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         })
         .catch((error) => {
             loadingOverlay.classList.remove("show");
-            responseContainer.innerHTML += `<p>An error occurred while sending the request.</p>`;
             console.error(error);
+            alert('Error generating PDF. Please try again later.');
         });
 
 
